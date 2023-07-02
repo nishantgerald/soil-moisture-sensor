@@ -15,5 +15,6 @@ while True:
     # Map the value to a moisture percentage and invert it
     moisture_percentage = map_value(moisture_value, 450, 850, 100, 0)
     
+    # print("Soil moisture level (%): ", moisture_percentage)
     print("Soil moisture level (%): ", moisture_percentage)
     time.sleep(1)
