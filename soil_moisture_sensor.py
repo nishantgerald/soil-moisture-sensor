@@ -7,7 +7,7 @@ import ujson
 # Initialize the ADC
 adc = ADC(0)
 
-url = "http://sensor.nishantgerald.com/api/sensor"
+url = "http://sensor.nishantgerald.com/api/v1/sensor"
 
 def map_value(value, in_min, in_max, out_min, out_max):
     # Map a value from one range to another
@@ -34,4 +34,4 @@ while True:
     
     # print("Soil moisture level (%): ", moisture_percentage)
     print("Soil moisture level (%): ", moisture_percentage)
-    time.sleep(2)
+    time.sleep(60)
